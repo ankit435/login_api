@@ -1,0 +1,22 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>img file </title>
+</head>
+<body>
+{% load static %}
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Upload</button>
+  </form>
+
+
+</body>
+</html>
+
+
+
